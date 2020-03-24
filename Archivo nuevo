@@ -1,4 +1,0 @@
-a = Boolean ("hola")
-if (a == true)
-{"hola, mundo".replace("hola", "adiós")}
-
