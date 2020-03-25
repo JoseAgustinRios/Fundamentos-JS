@@ -1,5 +1,5 @@
 var persona = {
-  nombre: 'Agustin',
+  name: 'Agustin',
   apellido: 'Rios',
   edad: '18',
   ingeniero: false,
@@ -9,7 +9,7 @@ var persona = {
 
 }
 function imprimirProfesiones(persona) {
-console.log(`${persona.nombre} es:`)
+console.log(`${persona.name} es:`)
 if (persona.ingeniero) {
   console.log ('ingeniero')
   }

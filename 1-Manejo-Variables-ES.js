@@ -9,11 +9,11 @@ var Normal = "Esta variable se usa normalmente"
 let Local = "Esta variable solo se encuentra dentro de un scope local"
 const Constante = "Esta Variable es constante, no deberia de modificarse"
 
-var nombre = "Agustin" , apellido = "Rios"
+var name = "Agustin" , apellido = "Rios"
     //Se puede declarar dos variables usando solamente una coma ","
 
-var nombreEnMayus = nombre.toUpperCase() //RESULTADO: nombreEnMayus = "AGUSTIN"
-    //La función toUpperCase sirve para poder la variable "nombre" en mayùscula
+var nameEnMayus = name.toUpperCase() //RESULTADO: nameEnMayus = "AGUSTIN"
+    //La función toUpperCase sirve para poder la variable "name" en mayùscula
     //Una simple función para obtener cualquier frase en mayúscula
     function upper(frase) {
         console.log(frase.toUpperCase());
@@ -26,17 +26,17 @@ var apellidoEnMinus = apellido.toLowerCase() //RESULTADO: apellidoEnMinus = "rio
         console.log(frase.toLowerCase());
              }
     
-var qletrasName = nombre.length //RESULTADO: qletrasName = 7
+var qletrasName = name.length //RESULTADO: qletrasName = 7
     //Esta función devuelve la cantidad de caracteres dentro del string
 
-var primeraletra = nombre.charAt (0) //RESULTADO: primeraletra = "A"
+var primeraletra = name.charAt (0) //RESULTADO: primeraletra = "A"
     //La función .charAt() sirve para tomar una letra de un string, toma un indice como paràmetro
     
     /*DESAFIO:
     Imprimir en pantalla la ultima letra de cualquier palabra
     */
         //Como declaración de variable
-        var ultl= nombre.charAt (qletrasName-1)
+        var ultl= name.charAt (qletrasName-1)
 
         //Como Funcion (Se verá mas adelante)
         function UltimaLetra (string) {
@@ -46,21 +46,21 @@ var primeraletra = nombre.charAt (0) //RESULTADO: primeraletra = "A"
         //A simple vista podrá parecer que es más larga la segunda forma, pero crear una función permite que
         //tome cualquier valor y además lo imprima en la consola *vease console.log()
 
-var nombrecompleto = `${nombre} ${apellido.toUpperCase()}` //RESULTADO: nombrecompleto = "Agustin RIOS"
+var namecompleto = `${name} ${apellido.toUpperCase()}` //RESULTADO: namecompleto = "Agustin RIOS"
     //A partir de ES6 se usa la comilla invertida para "sumar" strings y los mismos se colocan con ${esta} sintaxis
         //El equivalente a esto es la siguiente linea:
 
-            //var nombrecompleto = nombre + " " + apellido
+            //var namecompleto = name + " " + apellido
 
                       //aún asì deberias de definir una variable aparte para convertir el valor "apellido" a mayùsculas
 
-var str = nombre.substr (1, 2) //RESULTADO : str= 'gu'
+var str = name.substr (1, 2) //RESULTADO : str= 'gu'
     //.substr() toma una porción solamente de un string, puede ser útil para filtrar algún valor de un string muy largo
     var StringEjemplo= "AgustínRios18"
         var name = StringEjemplo.substr (0, 7) //R: Agustin
         var surname = StringEjemplo.substr (7, 4) //R: Rios
         var age = StringEjemplo.substr (11, 2) //R: 18
-        console.log(`El nombre del sujeto es ${name} su apellido ${surname} y su edad ${age} años`);
+        console.log(`El name del sujeto es ${name} su apellido ${surname} y su edad ${age} años`);
         // Incluso se podrian meter estos datos dentro de objetos y arrays para darle mucha más utilidad
 
 

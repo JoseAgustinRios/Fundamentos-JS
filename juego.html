@@ -197,9 +197,9 @@
           }
 
           elegirColor(ev){
-            const nombreColor= ev.target.dataset.color
-            const numeroColor = this.TransColorNum (nombreColor)
-            this.iluminarColor(nombreColor)
+            const nameColor= ev.target.dataset.color
+            const numeroColor = this.TransColorNum (nameColor)
+            this.iluminarColor(nameColor)
             if (numeroColor === this.secuencia[this.subnivel]){
               this.subnivel++
               if (this.subnivel === this.nivel) {

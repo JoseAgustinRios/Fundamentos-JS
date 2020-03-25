@@ -1,14 +1,14 @@
 class Persona {
-  constructor(nombre, apellido, altura) {
-    this.nombre = nombre
+  constructor(name, apellido, altura) {
+    this.name = name
     this.apellido = apellido
     this.altura = altura
   }
   saludar (fn) {
-        var { nombre, apellido } = this
-      console.log(`Hola, me llamo ${nombre} ${apellido}`)
+        var { name, apellido } = this
+      console.log(`Hola, me llamo ${name} ${apellido}`)
       if (fn) {
-        fn (nombre,apellido, null)
+        fn (name,apellido, null)
       }
   }
   soyAlto () {
@@ -16,22 +16,22 @@ class Persona {
   }
 }
 class Desarrollador extends Persona {
-  constructor(nombre, apellido, altura) {
-super(nombre, apellido, altura)
+  constructor(name, apellido, altura) {
+super(name, apellido, altura)
   }
 
 
   saludar (fn) {
-    var { nombre, apellido } = this
-    console.log(`Hola, me llamo ${nombre} ${apellido} y soy desarrollador/a`)
+    var { name, apellido } = this
+    console.log(`Hola, me llamo ${name} ${apellido} y soy desarrollador/a`)
     if (fn) {
-      fn (nombre, apellido, true)
+      fn (name, apellido, true)
     }
   }
 }
 
-function responderSaludo(nombre, apellido, esDev) {
-  console.log(`Buen día ${nombre} ${apellido}`);
+function responderSaludo(name, apellido, esDev) {
+  console.log(`Buen día ${name} ${apellido}`);
   if (esDev) {
     console.log(`Sos Dev!`);
 

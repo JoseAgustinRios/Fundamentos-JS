@@ -1,10 +1,10 @@
 var agus = {
-  nombre: 'Agustin',
+  name: 'Agustin',
   apellido: 'Rios',
   edad: 18,
   peso: 70
 }
-console.log(`Al inicio del año ${agus.nombre} pesa ${agus.peso}kg`);
+console.log(`Al inicio del año ${agus.name} pesa ${agus.peso}kg`);
 const INCREMENTO_PESO = 0.2
 const aumentarpeso = persona => persona.peso += INCREMENTO_PESO
 const adelgazarpeso = persona => persona.peso -=  INCREMENTO_PESO

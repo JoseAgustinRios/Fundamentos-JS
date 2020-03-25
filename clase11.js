@@ -1,6 +1,6 @@
 var x = 4
 var y = '4'
 var agus ={
-  nombre: 'Agustin'
+  name: 'Agustin'
 }
 var otracosa = agus

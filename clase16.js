@@ -1,34 +1,34 @@
 var agus = {
-  nombre:'Agustin',
+  name:'Agustin',
   apellido: 'Rios',
   altura: 1.90,
 }
 var pepe = {
-  nombre:'Jose',
+  name:'Jose',
   apellido: 'Joestar',
   altura: 1.95,
 }
 
 var jojo = {
-  nombre:'Joseph',
+  name:'Joseph',
   apellido: 'Joestar',
   altura: 1.91,
 }
 
 var giogio = {
-  nombre:'Giorno',
+  name:'Giorno',
   apellido: 'Giovanna',
   altura: 1.89,
 }
 
 var jolyne = {
-  nombre:'Jolyne',
+  name:'Jolyne',
   apellido: 'Kujo',
   altura: 1.88,
 }
 
 var dio = {
-  nombre:'Dio',
+  name:'Dio',
   apellido: 'Brando',
   altura: 2,
 }
@@ -36,5 +36,5 @@ var dio = {
 
 for (var i = 0; i < personas.length; i++) {
 var persona = personas[i]
-  console.log(`${persona.nombre} ${persona.apellido} mide ${persona.altura} mts`);
+  console.log(`${persona.name} ${persona.apellido} mide ${persona.altura} mts`);
 }

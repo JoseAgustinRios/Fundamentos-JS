@@ -1,10 +1,10 @@
-function Persona(nombre, apellido) {
-  this.nombre = nombre
+function Persona(name, apellido) {
+  this.name = name
   this.apellido = apellido
 }
 
 Persona.prototype.saludar = function () {
-  console.log(`Hola, me llamo ${this.nombre} ${this.apellido}`)
+  console.log(`Hola, me llamo ${this.name} ${this.apellido}`)
 };
 
 var agus = new Persona('Agustin','Rios')
