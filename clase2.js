@@ -5,22 +5,32 @@
 */
 //En Js se pueden realizar todas las operaciones matemáticas
 function CalcPizza(Qppl, Qpxp, Price, Tipo) {
-    let QPizzas = (Qpxp / Tipo) * Qppl
-    // let rest= QPizzas - QPizzas.toFixed(0) 
-    // if (rest > 0) {
-    //     QPizzasF = QPizzas + 1
-    // }
-    let TotalxPpl = Total/Qppl
-    function round_to_precision(x, precision) {
-        var y = +x + (precision === undefined ? 0.5 : precision/2);
-        return y - (y % (precision === undefined ? 1 : +precision));
+    
+    if (Qppl === 0 || Qpxp === 0 || Price === 0 || Tipo === 0 
+        ||Qppl === NaN || Qpxp === NaN || Price === NaN || Tipo === NaN) {
+        console.log(`Alguno de los valores es incorrecto`);
+        
+    } else {
+        let QPizzas = (Qpxp / Tipo) * Qppl
+      
+        function redondeo(x, precision) {
+            var y = +x + (precision === undefined ? 0.5 : precision/2);
+            return y - (y % (precision === undefined ? 1 : +precision));
+        }
+        let QPizzasF = redondeo (QPizzas, 1.9999999999999999999) 
+        let Total = (QPizzasF * Price).toFixed(2)
+        let TotalxPpl = Total/Qppl
+        console.log(`Deben comprarse ${QPizzasF.toFixed(0)} Pizzas y nos va costar $${Total}
+        Costando $${TotalxPpl.toFixed(2)} por cada uno`);
+        
     }
-    let QPizzasF = round_to_precision (QPizzas, 1.9999999999999999999) 
-    let Total = (QPizzasF * Price).toFixed(2)
-    console.log(`Deben comprarse ${QPizzasF.toFixed(0)} Pizzas y nos va costar $${Total}
-    Costando $${TotalxPpl.toFixed(2)} por cada uno`);
+    
     
 }
+
+
+
+
 
 var PrecioPizza = 120
 var PersonasPresentes = Grupo1 + Grupo2
